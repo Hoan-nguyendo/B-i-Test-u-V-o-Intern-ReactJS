@@ -1,0 +1,46 @@
+# BÁO CÁO DỰ ÁN BIỂU ĐỒ GIÁ BITCOIN
+
+## 1. Giới thiệu dự án
+### Tên dự án: Biểu đồ giá Bitcoin với Lightweight Charts
+- Mô tả: Dự án xây dựng một biểu đồ hiển thị dữ liệu Bitcoin theo thời gian thực, bao gồm biểu đồ nến Nhật, khối lượng giao dịch, và đường trung bình động (MA).
+- Công nghệ sử dụng: **Next.js, TypeScript, Lightweight Charts, Tailwind CSS, Binance API**.
+- Mục tiêu: Cung cấp công cụ trực quan giúp theo dõi biến động giá Bitcoin chính xác và dễ sử dụng.
+
+## 2. Tính năng chính
+### a. Biểu đồ giá
+- Hiển thị **biểu đồ nến Nhật (Candlestick Chart)**.
+- Tích hợp **biểu đồ khối lượng giao dịch (Volume Chart)**.
+
+### b. Điều chỉnh giao diện
+- **Chế độ sáng/tối** (Light/Dark mode).
+- Responsive trên cả **desktop và mobile**.
+
+### c. Chức năng hiển thị giá
+- **Cập nhật giá Bitcoin theo thời gian thực** từ Binance API.
+- Nút **lấy giá hiện tại và giá cách đây 1 phút**.
+### d. Điều chỉnh dữ liệu hiển thị
+- Hỗ trợ **nhiều khung thời gian** (1m, 5m, 30m, 1h, 4h, 1d).
+- **Kéo trái để xem dữ liệu cũ hơn**.
+
+## 3. Công nghệ sử dụng
+- **Next.js & TypeScript**: Tạo ứng dụng web 
+- **Lightweight Charts**: Vẽ biểu đồ .
+- **Binance API**: Lấy dữ liệu giá Bitcoin theo thời gian thực.
+- **Tailwind CSS**: Tối ưu giao diện, hỗ trợ chế độ sáng/tối.
+
+## 4. Báo cáo lỗi & Cải tiến
+### a. Lỗi đã phát hiện
+| STT | Mô tả lỗi | Trạng thái |
+|-----|----------|------------|
+| 1   | Biểu đồ không cuộn được khi hiển thị full màn hình | Đã sửa |
+| 2   | Không thay đổi được màu nền theo ý muốn | Đang cải thiện |
+| 3   | Lỗi cập nhật giá đôi khi chậm so với thực tế | Cần tối ưu |
+### b. Đề xuất cải tiến
+- Tối ưu việc lưu cache dữ liệu để **giảm số lần gọi API**.
+- Cải thiện hiệu suất render biểu đồ **khi thay đổi khung thời gian**.
+- Bổ sung tính năng **tùy chỉnh màu sắc nền nến Nhật** theo ý người dùng.
+- Hỗ trợ thêm **các loại tiền điện tử khác ngoài Bitcoin**.
+
+## 5. Kết luận
+Dự án đã hoàn thành các tính năng cốt lõi và đang tiếp tục tối ưu để cải thiện hiệu suất và trải nghiệm người dùng. Việc sửa lỗi và bổ sung tính năng mới sẽ giúp hệ thống hoạt động ổn định và linh hoạt hơn.
+
